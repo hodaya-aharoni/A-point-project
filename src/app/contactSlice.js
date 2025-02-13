@@ -23,11 +23,27 @@ const contactSlice = createSlice({
         insert: (state, action) => {
             state.arr = action.payload;
         },
-        setCurrentContact: (state, action) => { 
-            state.currentContact = action.payload; }  
-        
+        setCurrentContact: (state, action) => {
+            state.currentContact = action.payload;
+        }
+        ,
+        statusStar: (state, action) => {
+            state.currentContact = action.payload;
+            state.currentContact = {
+                ...action.payload,    
+                isMain: 1-action.payload.isMain      
+            };
+
+                state.arr = state.arr.map(item =>
+                    item.id === action.payload.id ? state.currentContact : item
+                );
+            
+
+
+        }
+
     }
 })
 
-export const {updateContact,insert,addContactToArr,setCurrentContact} = contactSlice.actions;
+export const { statusStar, updateContact, insert, addContactToArr, setCurrentContact } = contactSlice.actions;
 export default contactSlice.reducer;

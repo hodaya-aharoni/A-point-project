@@ -4,6 +4,7 @@ import CTable from './component/Table'
 
 import { useDispatch } from 'react-redux'
 import { insert } from './app/contactSlice'
+import AddContact from './component/AddContact.jsx'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   }, [])
   return (
   <>
-      
+      <AddContact/>
       <CTable />
      
     </>

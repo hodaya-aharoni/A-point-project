@@ -8,9 +8,10 @@ import {setCurrentContact} from '../app/contactSlice'
 import { useDispatch } from 'react-redux'
 
 
+
 const ContactDrawer = ({ contact, open, onClose }) => {
     return (
-        <Drawer anchor="right" open={open} onClose={onClose} PaperProps={{ sx: { width: 400 }}}>
+        <Drawer anchor="right" open={open} onClose={onClose} PaperProps={{ sx: { width: 450 }}}>
                <Box p={3} sx={{ width: '80%' }}> 
                 <IconButton onClick={onClose} sx={{ position: 'absolute', top: 10, right: 10 }}>
                     <CloseIcon />

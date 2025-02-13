@@ -5,10 +5,10 @@ import '../style/ContactDetails.css'
 import EditIcon from '@mui/icons-material/Edit';
 import StarIcon from '@mui/icons-material/Star';
 import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
-import Flag from 'react-world-flags'; 
 
 const ContactDetails = () => {
   const contact = useSelector(state => state.contact.currentContact);
+
 
   if (!contact) return <div>No contact selected</div>;
 
@@ -22,7 +22,7 @@ const ContactDetails = () => {
       <div className="edit"><EditIcon className="icon" /> Edit</div>
       <div className="header">
         <h3>Contact Details</h3>
-        <div className="main-contact"> <StarIcon className="icon" /> Main contact</div>
+       {contact.isMain==1 && <div className="main-contact"> <StarIcon className="icon"/> Main contact</div>} 
 
       </div>
       <div className="contact-info">
