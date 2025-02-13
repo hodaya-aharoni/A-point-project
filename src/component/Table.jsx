@@ -9,7 +9,7 @@ import Paper from '@mui/material/Paper';
 import TableItem from './TableItem';
 import { useSelector } from 'react-redux';
 import FaceOutlinedIcon from '@mui/icons-material/FaceOutlined';
-export default function CTable() {
+export default function CTable({open,onClose,setOpen}) {
   let arr = useSelector(state=>state.contact.arr)
 
     return (
@@ -29,7 +29,7 @@ export default function CTable() {
                 </TableHead>
                 <TableBody>
                     {arr.map((row,index) => (
-                        <TableItem row={row} key={index}/>
+                        <TableItem row={row} key={index} open={open} onClose={onClose} setOpen={setOpen}/>
                     ))}
                 </TableBody>
             </Table>

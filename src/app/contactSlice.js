@@ -12,6 +12,7 @@ const contactSlice = createSlice({
     reducers: {
         addContactToArr: (state, action) => {
             let newID = { ...action.payload, id: state.arr[state.arr.length - 1].id + 1 }
+            action.payload.id=newID
             state.arr.push(action.payload)
         },
         updateContact: (state, action) => {

@@ -1,13 +1,18 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import CTable from './component/Table'
 
 import { useDispatch } from 'react-redux'
 import { insert } from './app/contactSlice'
-import AddContact from './component/AddContact.jsx'
+
+import AddButton from './component/AddButton'
 
 
 function App() {
+  const [open, setOpen] = useState(false);
+  function onClose() {
+    setOpen(false)
+  }
 
   let dispatch = useDispatch();
   useEffect(() => {
@@ -21,8 +26,9 @@ function App() {
   }, [])
   return (
   <>
-      <AddContact/>
-      <CTable />
+
+      <AddButton open={open} onClose={onClose} setOpen={setOpen}/>
+      <CTable open={open} onClose={onClose} setOpen={setOpen}/>
      
     </>
   )

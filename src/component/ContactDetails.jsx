@@ -1,10 +1,12 @@
-
 import React from 'react';
 import { useSelector } from 'react-redux';
 import '../style/ContactDetails.css'
-import EditIcon from '@mui/icons-material/Edit';
 import StarIcon from '@mui/icons-material/Star';
 import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
+import ModeEditOutlinedIcon from '@mui/icons-material/ModeEditOutlined';
+import { IconButton } from '@mui/material';
+import DrawerMain from './DrawerMain';
+import { ContactDrawerTrigger } from './DrawerMUI';
 
 const ContactDetails = () => {
   const contact = useSelector(state => state.contact.currentContact);
@@ -19,7 +21,7 @@ const ContactDetails = () => {
           <Face6OutlinedIcon className="face-icon" />
         </div>
       </div>
-      <div className="edit"><EditIcon className="icon" /> Edit</div>
+      <div className="edit"> <IconButton onClick={<ContactDrawerTrigger row={contact}/>} > <ModeEditOutlinedIcon/> </IconButton> Edit </div>
       <div className="header">
         <h3>Contact Details</h3>
        {contact.isMain==1 && <div className="main-contact"> <StarIcon className="icon"/> Main contact</div>} 
@@ -31,7 +33,6 @@ const ContactDetails = () => {
           <div className="contact-field"><span>Role</span> {contact.role}</div>
           <div className="contact-field"><span>Contact Type</span> {contact.contactType}</div>
         </div>
-
         <div className="contact-field"><span>Preferred Language</span> {contact.preferredLanguage} {contact.preferredLanguage}</div>
         <div className="contact-field"><span>Phone</span> {contact.phones[0]?.number}</div>
         <div className="contact-field"><span>Email</span> {contact.emails[0]?.address}</div>
@@ -40,6 +41,7 @@ const ContactDetails = () => {
         <div className="contact-field"><span>Accounting Ref</span> {contact.accountingRef}</div>
         
       </div>
+    
     </div>
   );
 };

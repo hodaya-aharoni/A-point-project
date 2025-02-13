@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Drawer, IconButton, Box, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
@@ -20,7 +19,6 @@ const ContactDrawer = ({ contact, open, onClose }) => {
                 <Typography variant="h6" sx={{ marginBottom: 2 }}> </Typography>
             </Box>
         </Drawer>
-
     );
 };
 
@@ -37,7 +35,6 @@ const ContactDrawerTrigger = ({ row }) => {
             </IconButton>
             <ContactDrawer contact={row} open={drawerOpen} onClose={() => setDrawerOpen(false)} />
         </>
-
     );
 
 };
