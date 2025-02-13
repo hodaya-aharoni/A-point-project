@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "contactType": "Contractor",
+    "firstName": "Stive",
+    "lastName": "Ger",
+    "role": "Manager",
+    "isMain": false,
+    "phones": [
+      { "number": "050-1234567", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "stive.ger@example.com", "type": "Work" }
+    ],
+    "address": "123 Main St, Anytown",
+    "comment": "Needs more experience",
+    "profilePicture": ""
+  },
+  {
+    "id": 2,
+    "contactType": "Supplier",
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "Sales Representative",
+    "isMain": false,
+    "phones": [
+      { "number": "052-9876543", "type": "Work" }
+    ],
+    "emails": [
+      { "address": "john.doe@example.com", "type": "Work" }
+    ],
+    "address": "456 Oak Ave, Anytown",
+    "comment": "Reliable supplier",
+    "profilePicture": ""
+  },
+  {
+    "id": 3,
+    "contactType": "Client",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "role": "Project Manager",
+    "isMain": false,
+    "phones": [
+      { "number": "054-1011121", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "jane.smith@example.com", "type": "Work" }
+    ],
+    "address": "789 Pine Ln, Anytown",
+    "comment": "Demanding client",
+    "profilePicture": ""
+  },
+  {
+    "id": 4,
+    "contactType": "Employee",
+    "firstName": "David",
+    "lastName": "Lee",
+    "role": "Software Engineer",
+    "isMain": false,
+    "phones": [
+      { "number": "055-1314151", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "david.lee@example.com", "type": "Work" }
+    ],
+    "address": "101 Maple Dr, Anytown",
+    "comment": "Excellent coder",
+    "profilePicture": ""
+  },
+  {
+    "id": 5,
+    "contactType": "Partner",
+    "firstName": "Sarah",
+    "lastName": "Jones",
+    "role": "Marketing Director",
+    "isMain": false,
+    "phones": [
+      { "number": "053-1617181", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "sarah.jones@example.com", "type": "Work" }
+    ],
+    "address": "202 Birch Rd, Anytown",
+    "comment": "Great partner",
+    "profilePicture": ""
+  },
+  {
+    "id": 6,
+    "contactType": "Contractor",
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "role": "Technician",
+    "isMain": false,
+    "phones": [
+      { "number": "051-1920212", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "michael.brown@example.com", "type": "Work" }
+    ],
+    "address": "303 Cedar Ct, Anytown",
+    "comment": "Skilled technician",
+    "profilePicture": ""
+  },
+  {
+    "id": 7,
+    "contactType": "Supplier",
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "role": "Customer Service Representative",
+    "isMain": false,
+    "phones": [
+      { "number": "052-2223242", "type": "Work" }
+    ],
+    "emails": [
+      { "address": "emily.davis@example.com", "type": "Work" }
+    ],
+    "address": "404 Willow Way, Anytown",
+    "comment": "Helpful representative",
+    "profilePicture": ""
+  },
+  {
+    "id": 8,
+    "contactType": "Client",
+    "firstName": "Robert",
+    "lastName": "Wilson",
+    "role": "CEO",
+    "isMain": false,
+    "phones": [
+      { "number": "054-2526272", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "robert.wilson@example.com", "type": "Work" }
+    ],
+    "address": "505 Redwood Pl, Anytown",
+    "comment": "Important client",
+    "profilePicture": ""
+  },
+  {
+    "id": 9,
+    "contactType": "Employee",
+    "firstName": "Ashley",
+    "lastName": "Garcia",
+    "role": "Data Analyst",
+    "isMain": false,
+    "phones": [
+      { "number": "053-2829303", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "ashley.garcia@example.com", "type": "Work" }
+    ],
+    "address": "606 Oak St, Anytown",
+    "comment": "Talented analyst",
+    "profilePicture": ""
+  },
+  {
+    "id": 10,
+    "contactType": "Partner",
+    "firstName": "William",
+    "lastName": "Rodriguez",
+    "role": "Business Development Manager",
+    "isMain": false,
+    "phones": [
+      { "number": "051-3132333", "type": "Mobile" }
+    ],
+    "emails": [
+      { "address": "william.rodriguez@example.com", "type": "Work" }
+    ],
+    "address": "707 Pine Ave, Anytown",
+    "comment": "Strategic partner",
+    "profilePicture": ""
+  }
+]
