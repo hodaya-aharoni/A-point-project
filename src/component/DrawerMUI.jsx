@@ -10,13 +10,13 @@ import { useDispatch } from 'react-redux'
 
 const ContactDrawer = ({ contact, open, onClose }) => {
     return (
-        <Drawer anchor="right" open={open} onClose={onClose}>
-            <Box p={3} width={300}>
+        <Drawer anchor="right" open={open} onClose={onClose} PaperProps={{ sx: { width: 400 }}}>
+               <Box p={3} sx={{ width: '80%' }}> 
                 <IconButton onClick={onClose} sx={{ position: 'absolute', top: 10, right: 10 }}>
                     <CloseIcon />
                 </IconButton>
                 <ContactDetails />
-                <Typography variant="h6" sx={{ marginBottom: 2 }}> Contact</Typography>
+                <Typography variant="h6" sx={{ marginBottom: 2 }}> </Typography>
             </Box>
         </Drawer>
 

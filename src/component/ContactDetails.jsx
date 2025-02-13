@@ -1,33 +1,50 @@
+
 import React from 'react';
 import { useSelector } from 'react-redux';
+import '../style/ContactDetails.css'
+import EditIcon from '@mui/icons-material/Edit';
+import StarIcon from '@mui/icons-material/Star';
+import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
+import Flag from 'react-world-flags'; 
 
 const ContactDetails = () => {
-    let contacts = useSelector(state=>state.contact.currentContact);
+  const contact = useSelector(state => state.contact.currentContact);
+
+  if (!contact) return <div>No contact selected</div>;
+
   return (
-    
     <div className="contact-details">
+      <div className="photo-container">
+        <div className="photo-placeholder">
+          <Face6OutlinedIcon className="face-icon" />
+        </div>
+      </div>
+      <div className="edit"><EditIcon className="icon" /> Edit</div>
       <div className="header">
-        <span className="main-contact">Main contact</span>
-        <span className="edit">Edit</span>
+        <h3>Contact Details</h3>
+        <div className="main-contact"> <StarIcon className="icon" /> Main contact</div>
+
       </div>
-      <div className="photo">
-     
-      </div>
-      <div className="details">
-        <div className={contacts.name}>{contacts.name}</div>
-        <div className={contacts.role}>{contacts.role}</div>
-        <div className={contacts.contactType}>{contacts.contactType}</div>
-        <div className="preferred-language">{contacts.preferredLanguage}</div>
-        <div className={contacts.phone}>{contacts.phone}</div>
-        <div className={contacts.email}>{contacts.email}</div>
-        <div className={contacts.address}>{contacts.address}</div>
-        <div className="invoice-name">{contacts.invoiceName}</div>
-        <div className="accounting-ref">{contacts.accountingRef}</div>
-        <div className="vat-number">{contacts.vatNumber}</div>
+      <div className="contact-info">
+        <div className="contact-row">
+          <div className="contact-field"><span>Name</span> {contact.firstName +" "+ contact.lastName}</div>
+          <div className="contact-field"><span>Role</span> {contact.role}</div>
+          <div className="contact-field"><span>Contact Type</span> {contact.contactType}</div>
+        </div>
+
+        <div className="contact-field"><span>Preferred Language</span> {contact.preferredLanguage} {contact.preferredLanguage}</div>
+        <div className="contact-field"><span>Phone</span> {contact.phones[0]?.number}</div>
+        <div className="contact-field"><span>Email</span> {contact.emails[0]?.address}</div>
+        <div className="contact-field"><span>Address</span> {contact.address}</div>
+        <div className="contact-field"><span>Invoice Name</span> {contact.address}</div>
+        <div className="contact-field"><span>Accounting Ref</span> {contact.accountingRef}</div>
+        
       </div>
     </div>
   );
 };
 
 export default ContactDetails;
+
+
 

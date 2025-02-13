@@ -12,9 +12,12 @@
     "emails": [
       { "address": "stive.ger@example.com", "type": "Work" }
     ],
-    "address": "123 Main St, Anytown",
+    "address": " Main St, Anytown",
     "comment": "Needs more experience",
-    "profilePicture": ""
+    "profilePicture": "",
+    "preferredLanguage": "Hebrew",
+    "countryFlag": "IL",
+    "accountingRef": "ACC12345"
   },
   {
     "id": 2,
@@ -29,9 +32,12 @@
     "emails": [
       { "address": "john.doe@example.com", "type": "Work" }
     ],
-    "address": "456 Oak Ave, Anytown",
+    "address": " Oak Ave, Anytown",
     "comment": "Reliable supplier",
-    "profilePicture": ""
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC67890"
   },
   {
     "id": 3,
@@ -46,9 +52,11 @@
     "emails": [
       { "address": "jane.smith@example.com", "type": "Work" }
     ],
-    "address": "789 Pine Ln, Anytown",
-    "comment": "Demanding client",
-    "profilePicture": ""
+    "address": " Pine Ln, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC11223"
   },
   {
     "id": 4,
@@ -63,9 +71,11 @@
     "emails": [
       { "address": "david.lee@example.com", "type": "Work" }
     ],
-    "address": "101 Maple Dr, Anytown",
-    "comment": "Excellent coder",
-    "profilePicture": ""
+    "address": " Maple Dr, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC44556"
   },
   {
     "id": 5,
@@ -80,9 +90,11 @@
     "emails": [
       { "address": "sarah.jones@example.com", "type": "Work" }
     ],
-    "address": "202 Birch Rd, Anytown",
-    "comment": "Great partner",
-    "profilePicture": ""
+    "address": " Birch Rd, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC99887"
   },
   {
     "id": 6,
@@ -97,9 +109,11 @@
     "emails": [
       { "address": "michael.brown@example.com", "type": "Work" }
     ],
-    "address": "303 Cedar Ct, Anytown",
-    "comment": "Skilled technician",
-    "profilePicture": ""
+    "address": " Cedar Ct, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC77665"
   },
   {
     "id": 7,
@@ -114,9 +128,11 @@
     "emails": [
       { "address": "emily.davis@example.com", "type": "Work" }
     ],
-    "address": "404 Willow Way, Anytown",
-    "comment": "Helpful representative",
-    "profilePicture": ""
+    "address": " Willow Way, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC55443"
   },
   {
     "id": 8,
@@ -131,9 +147,11 @@
     "emails": [
       { "address": "robert.wilson@example.com", "type": "Work" }
     ],
-    "address": "505 Redwood Pl, Anytown",
-    "comment": "Important client",
-    "profilePicture": ""
+    "address": " Redwood Pl, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC66778"
   },
   {
     "id": 9,
@@ -148,9 +166,11 @@
     "emails": [
       { "address": "ashley.garcia@example.com", "type": "Work" }
     ],
-    "address": "606 Oak St, Anytown",
-    "comment": "Talented analyst",
-    "profilePicture": ""
+    "address": " Oak St, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC33445"
   },
   {
     "id": 10,
@@ -165,8 +185,10 @@
     "emails": [
       { "address": "william.rodriguez@example.com", "type": "Work" }
     ],
-    "address": "707 Pine Ave, Anytown",
-    "comment": "Strategic partner",
-    "profilePicture": ""
+    "address": " Pine Ave, Anytown",
+    "profilePicture": "",
+    "preferredLanguage": "English",
+    "countryFlag": "US",
+    "accountingRef": "ACC22334"
   }
 ]
