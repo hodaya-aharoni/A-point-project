@@ -6,18 +6,16 @@
     "lastName": "Ger",
     "role": "Resident Manager",
     "isMain": 0,
-    "phones": [
-      { "number": "050-1234567", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "stive.ger@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "050-1234567", "type": "Mobile" }],
+    "emails": [{ "address": "stive.ger@example.com", "type": "Work" }],
     "address": "Apartment 1, Main St, Anytown",
     "comment": "Needs more experience with building management",
     "profilePicture": "",
     "preferredLanguage": "Hebrew",
     "countryFlag": "IL",
-    "accountingRef": "ACC12345"
+    "accountingRef": "ACC12345",
+    "tags": "old",
+    "activeContact": true
   },
   {
     "id": 2,
@@ -26,18 +24,16 @@
     "lastName": "Doe",
     "role": "Treasurer",
     "isMain": 0,
-    "phones": [
-      { "number": "052-9876543", "type": "Work" }
-    ],
-    "emails": [
-      { "address": "john.doe@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "052-9876543", "type": "Work" }],
+    "emails": [{ "address": "john.doe@example.com", "type": "Work" }],
     "address": "Apartment 2, Oak Ave, Anytown",
     "comment": "Responsible for financial oversight",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC67890"
+    "accountingRef": "ACC67890",
+    "tags": "VIP",
+    "activeContact": true
   },
   {
     "id": 3,
@@ -46,18 +42,16 @@
     "lastName": "Smith",
     "role": "Project Manager",
     "isMain": 0,
-    "phones": [
-      { "number": "054-1011121", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "jane.smith@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "054-1011121", "type": "Mobile" }],
+    "emails": [{ "address": "jane.smith@example.com", "type": "Work" }],
     "address": "Apartment 3, Pine Ln, Anytown",
     "comment": "Managing building renovation project",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC11223"
+    "accountingRef": "ACC11223",
+    "tags": "new",
+    "activeContact": false
   },
   {
     "id": 4,
@@ -66,18 +60,16 @@
     "lastName": "Lee",
     "role": "Building Engineer",
     "isMain": 0,
-    "phones": [
-      { "number": "055-1314151", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "david.lee@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "055-1314151", "type": "Mobile" }],
+    "emails": [{ "address": "david.lee@example.com", "type": "Work" }],
     "address": "Apartment 4, Maple Dr, Anytown",
     "comment": "Responsible for maintenance",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC44556"
+    "accountingRef": "ACC44556",
+    "tags": "new",
+    "activeContact": true
   },
   {
     "id": 5,
@@ -86,18 +78,16 @@
     "lastName": "Jones",
     "role": "Marketing Director",
     "isMain": 0,
-    "phones": [
-      { "number": "053-1617181", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "sarah.jones@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "053-1617181", "type": "Mobile" }],
+    "emails": [{ "address": "sarah.jones@example.com", "type": "Work" }],
     "address": "Apartment 5, Birch Rd, Anytown",
     "comment": "Marketing manager for the building's rental units",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC99887"
+    "accountingRef": "ACC99887",
+    "tags": "VIP",
+    "activeContact": true
   },
   {
     "id": 6,
@@ -106,18 +96,16 @@
     "lastName": "Brown",
     "role": "Technician",
     "isMain": 0,
-    "phones": [
-      { "number": "051-1920212", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "michael.brown@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "051-1920212", "type": "Mobile" }],
+    "emails": [{ "address": "michael.brown@example.com", "type": "Work" }],
     "address": "Apartment 6, Cedar Ct, Anytown",
     "comment": "Technical support for building systems",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC77665"
+    "accountingRef": "ACC77665",
+    "tags": "old",
+    "activeContact": true
   },
   {
     "id": 7,
@@ -126,18 +114,16 @@
     "lastName": "Davis",
     "role": "Customer Service Representative",
     "isMain": 0,
-    "phones": [
-      { "number": "052-2223242", "type": "Work" }
-    ],
-    "emails": [
-      { "address": "emily.davis@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "052-2223242", "type": "Work" }],
+    "emails": [{ "address": "emily.davis@example.com", "type": "Work" }],
     "address": "Apartment 7, Willow Way, Anytown",
     "comment": "Supplier of building materials",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC55443"
+    "accountingRef": "ACC55443",
+    "tags": "old",
+    "activeContact": true
   },
   {
     "id": 8,
@@ -146,18 +132,16 @@
     "lastName": "Wilson",
     "role": "CEO",
     "isMain": 0,
-    "phones": [
-      { "number": "054-2526272", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "robert.wilson@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "054-2526272", "type": "Mobile" }],
+    "emails": [{ "address": "robert.wilson@example.com", "type": "Work" }],
     "address": "Apartment 8, Redwood Pl, Anytown",
     "comment": "Owner of the building",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC66778"
+    "accountingRef": "ACC66778",
+    "tags": "VIP",
+    "activeContact": true
   },
   {
     "id": 9,
@@ -166,18 +150,16 @@
     "lastName": "Garcia",
     "role": "Data Analyst",
     "isMain": 0,
-    "phones": [
-      { "number": "053-2829303", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "ashley.garcia@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "053-2829303", "type": "Mobile" }],
+    "emails": [{ "address": "ashley.garcia@example.com", "type": "Work" }],
     "address": "Apartment 9, Oak St, Anytown",
     "comment": "Analyzing building's financial data",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC33445"
+    "accountingRef": "ACC33445",
+    "tags": "new",
+    "activeContact": true
   },
   {
     "id": 10,
@@ -186,17 +168,15 @@
     "lastName": "Rodriguez",
     "role": "Business Development Manager",
     "isMain": 0,
-    "phones": [
-      { "number": "051-3132333", "type": "Mobile" }
-    ],
-    "emails": [
-      { "address": "william.rodriguez@example.com", "type": "Work" }
-    ],
+    "phones": [{ "number": "051-3132333", "type": "Mobile" }],
+    "emails": [{ "address": "william.rodriguez@example.com", "type": "Work" }],
     "address": "Apartment 10, Pine Ave, Anytown",
     "comment": "Responsible for community outreach",
     "profilePicture": "",
     "preferredLanguage": "English",
     "countryFlag": "US",
-    "accountingRef": "ACC22334"
+    "accountingRef": "ACC22334",
+    "tags": "old",
+    "activeContact": true
   }
 ]

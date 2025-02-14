@@ -11,6 +11,7 @@ const Filter = () => {
   const [search, setSearch] = useState("");
   const [open, setOpen] = useState(false);
   const dispatch = useDispatch();
+  
 
   const displayedContacts = useSelector((state) => state.contact.arr);
 
@@ -30,16 +31,26 @@ const Filter = () => {
   };
 
   const handleSaveFilters = (filters) => {
-    let filteredData = contactData; 
+  let filteredData = contactData;
 
-    if (filters.contactType !== "All") {
-      filteredData = filteredData.filter(contact => contact.contactType === filters.contactType);
-    }
+  if (filters.contactType !== "All") {
+    filteredData = filteredData.filter(contact => contact.contactType === filters.contactType);
+  }
 
-    dispatch(insert(filteredData)); 
-    setOpen(false);
-  };
+  if (filters.tags !== "All") {
+    filteredData = filteredData.filter(contact => contact.tags===filters.tags);
+  }
 
+  if (filters.activeContact !== "All") {
+    const isActive = filters.activeContact === "Yes"; 
+    filteredData = filteredData.filter(contact => contact.activeContact === isActive);
+  }
+  if (filters.mainContact) {
+    filteredData = filteredData.filter(contact => contact.isMain === filters.mainContact);
+  }
+  dispatch(insert(filteredData));
+  setOpen(false);
+};
   return (
     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 1 }}>
       <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -86,3 +97,4 @@ const Filter = () => {
 };
 
 export default Filter;
+

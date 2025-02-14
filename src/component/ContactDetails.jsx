@@ -5,7 +5,7 @@ import StarIcon from '@mui/icons-material/Star';
 import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
 import ModeEditOutlinedIcon from '@mui/icons-material/ModeEditOutlined';
 import { IconButton } from '@mui/material';
-import DrawerMain from './DrawerMain';
+// import DrawerMain from './DrawerMain';
 import { ContactDrawerTrigger } from './DrawerMUI';
 
 const ContactDetails = () => {
