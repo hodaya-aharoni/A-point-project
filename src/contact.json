@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "contactType": "Tenant",
+    "contactType": "Resident",
     "firstName": "Stive",
     "lastName": "Ger",
     "role": "Resident Manager",
@@ -21,7 +21,7 @@
   },
   {
     "id": 2,
-    "contactType": "Board Member",
+    "contactType": "Cleaner",
     "firstName": "John",
     "lastName": "Doe",
     "role": "Treasurer",
@@ -41,7 +41,7 @@
   },
   {
     "id": 3,
-    "contactType": "Tenant",
+    "contactType": "Gardener",
     "firstName": "Jane",
     "lastName": "Smith",
     "role": "Project Manager",
@@ -61,7 +61,7 @@
   },
   {
     "id": 4,
-    "contactType": "Employee",
+    "contactType": "Electrician",
     "firstName": "David",
     "lastName": "Lee",
     "role": "Building Engineer",
@@ -81,7 +81,7 @@
   },
   {
     "id": 5,
-    "contactType": "Partner",
+    "contactType": "Contractor",
     "firstName": "Sarah",
     "lastName": "Jones",
     "role": "Marketing Director",
@@ -121,7 +121,7 @@
   },
   {
     "id": 7,
-    "contactType": "Supplier",
+    "contactType": "Owner",
     "firstName": "Emily",
     "lastName": "Davis",
     "role": "Customer Service Representative",
@@ -141,7 +141,7 @@
   },
   {
     "id": 8,
-    "contactType": "Tenant",
+    "contactType": "Resident",
     "firstName": "Robert",
     "lastName": "Wilson",
     "role": "CEO",
@@ -161,7 +161,7 @@
   },
   {
     "id": 9,
-    "contactType": "Employee",
+    "contactType": "Tenant",
     "firstName": "Ashley",
     "lastName": "Garcia",
     "role": "Data Analyst",
@@ -181,7 +181,7 @@
   },
   {
     "id": 10,
-    "contactType": "Board Member",
+    "contactType": "Owner",
     "firstName": "William",
     "lastName": "Rodriguez",
     "role": "Business Development Manager",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Typography, Modal, Button, MenuItem, Select, Switch, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
-const FilterModal = ({ open, onClose }) => {
+const FilterModal = ({ open, onClose, onSave }) => {
   const [filters, setFilters] = useState({
     contactType: "All",
     tags: "All",
@@ -21,15 +21,24 @@ const FilterModal = ({ open, onClose }) => {
           </IconButton>
         </Box>
 
-       
-        <Button variant="outlined" size="small" sx={{ mb: 2 }}>x Clear all</Button>
+        <Button variant="outlined" size="small" sx={{ mb: 2 }} onClick={() => setFilters({
+          contactType: "All",
+          tags: "All",
+          activeContact: "All",
+          mainContact: false
+        })}>x Clear all</Button>
 
-       
         <Typography variant="body1">Contact Type</Typography>
         <Select fullWidth value={filters.contactType} onChange={(e) => setFilters({ ...filters, contactType: e.target.value })}>
           <MenuItem value="All">All</MenuItem>
-          <MenuItem value="Client">Client</MenuItem>
-          <MenuItem value="Supplier">Supplier</MenuItem>
+          <MenuItem value="Cleaner">Cleaner</MenuItem>
+          <MenuItem value="Gardener">Gardener</MenuItem>
+          <MenuItem value="Electrician">Electrician</MenuItem>
+          <MenuItem value="Plumber">Plumber</MenuItem>
+          <MenuItem value="Contractor">Contractor</MenuItem>
+          <MenuItem value="Tenant">Tenant</MenuItem>
+          <MenuItem value="Owner">Owner</MenuItem>
+          <MenuItem value="Resident">Resident</MenuItem>
         </Select>
 
         <Typography variant="body1">Tags</Typography>
@@ -49,10 +58,12 @@ const FilterModal = ({ open, onClose }) => {
         <Typography variant="body1">Main Contact</Typography>
         <Switch checked={filters.mainContact} onChange={(e) => setFilters({ ...filters, mainContact: e.target.checked })} />
 
-       
         <Box sx={{ display: "flex", justifyContent: "space-between", mt: 3 }}>
           <Button variant="text" onClick={onClose}>Cancel</Button>
-          <Button variant="contained" onClick={onClose}>Save</Button>
+          <Button variant="contained" onClick={() => { 
+            onSave(filters); // מעבירים את הפילטרים ל-Filter.jsx
+            onClose(); // סוגרים את המודל
+          }}>Save</Button>
         </Box>
       </Box>
     </Modal>
