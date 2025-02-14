@@ -22,14 +22,6 @@ const AddButton = ({open,onClose,setOpen}) => {
       </Box>
 
       <DrawerMain open={open} onClose={onClose} a="add" />
-      {/* <Drawer anchor="right" open={open} onClose={onClose}>
-                <Box p={3} width={300}>
-                    <IconButton onClick={() => setOpen(false)} sx={{ position: 'absolute', top: 10, right: 10 }}>
-                        <CloseIcon />
-                    </IconButton>
-                    <AddContact onClose={onClose}/>
-                </Box>
-            </Drawer> */}
     </>
   );
 };

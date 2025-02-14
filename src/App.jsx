@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import CTable from './component/Table'
-
 import { useDispatch } from 'react-redux'
 import { insert } from './app/contactSlice'
-
 import AddButton from './component/AddButton'
+import Filter from './component/Filter'
 
 
 function App() {
   const [open, setOpen] = useState(false);
+
   function onClose() {
     setOpen(false)
   }
@@ -26,9 +26,10 @@ function App() {
   }, [])
   return (
   <>
-
+    <Filter/>
       <AddButton open={open} onClose={onClose} setOpen={setOpen}/>
       <CTable open={open} onClose={onClose} setOpen={setOpen}/>
+     
      
     </>
   )
@@ -36,3 +37,4 @@ function App() {
 }
 
 export default App
+

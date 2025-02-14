@@ -19,6 +19,7 @@ const ContactDrawer = ({ contact, open, onClose }) => {
                 <Typography variant="h6" sx={{ marginBottom: 2 }}> </Typography>
             </Box>
         </Drawer>
+
     );
 };
 
@@ -35,6 +36,7 @@ const ContactDrawerTrigger = ({ row }) => {
             </IconButton>
             <ContactDrawer contact={row} open={drawerOpen} onClose={() => setDrawerOpen(false)} />
         </>
+
     );
 
 };

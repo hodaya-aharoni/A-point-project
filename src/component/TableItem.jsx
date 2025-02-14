@@ -9,8 +9,7 @@ import { ContactDrawerTrigger } from './DrawerMUI'
 import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
 import { useDispatch } from "react-redux";
 import { setCurrentContact, statusStar } from '../app/contactSlice.js'
-import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
-import DrawerMain from "./DrawerMain.jsx";
+
 
 const TableItem = ({ row ,open,onClose,setOpen}) => {
     const [value, setValue] = useState(0);
@@ -47,15 +46,6 @@ const TableItem = ({ row ,open,onClose,setOpen}) => {
             </TableCell>
             <TableCell >
                 <ContactDrawerTrigger row={row} />
-
-                {/* <IconButton onClick={() => {
-                    setOpen(true)
-                    dispatch(setCurrentContact(row));
-                }}>
-                    <RemoveRedEyeOutlinedIcon />
-                </IconButton>
-                <DrawerMain open={open} onClose={onClose} a="show" /> */}
-
             </TableCell>
         </TableRow>
     );
