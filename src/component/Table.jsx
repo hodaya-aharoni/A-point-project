@@ -30,7 +30,7 @@ export default function CTable({open,onClose,setOpen}) {
                 </TableHead>
                 <TableBody>
                     {arr.map((row,index) => (
-                        <TableItem row={row} key={index} open={open} onClose={onClose} setOpen={setOpen}/>
+                        <TableItem row={row} key={index}/>
                     ))}
                 </TableBody>
             </Table>

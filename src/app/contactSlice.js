@@ -38,9 +38,6 @@ const contactSlice = createSlice({
                 state.arr = state.arr.map(item =>
                     item.id === action.payload.id ? state.currentContact : item
                 );
-            
-
-
         }
 
     }

@@ -46,7 +46,7 @@ const Filter = () => {
     filteredData = filteredData.filter(contact => contact.activeContact === isActive);
   }
   if (filters.mainContact) {
-    filteredData = filteredData.filter(contact => contact.isMain === filters.mainContact);
+    filteredData = filteredData.filter(contact => contact.isMain === filters.isMain);
   }
   dispatch(insert(filteredData));
   setOpen(false);

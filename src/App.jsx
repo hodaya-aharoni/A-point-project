@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import './style/App.css'
 import CTable from './component/Table'
 import { useDispatch } from 'react-redux'
 import { insert } from './app/contactSlice'
