@@ -5,17 +5,16 @@ import { useState } from 'react';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-
 import Face6OutlinedIcon from '@mui/icons-material/Face6Outlined';
 import { useDispatch } from "react-redux";
-import { setCurrentContact, statusStar } from '../app/contactSlice.js'
+import { statusStar } from '../app/contactSlice.js'
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import DrawerMain  from './DrawerMain.jsx'
 
 
 const TableItem = ({ row }) => {
     const [drawerOpen, setDrawerOpen] = useState(false);
-    const [value, setValue] = useState(false);
+    const [value, setValue] = useState(0);
     const [mode, setMode] = useState("view");
     let dispatch = useDispatch();
 
@@ -53,10 +52,11 @@ const TableItem = ({ row }) => {
                     </IconButton>
                 </TableCell>
             </TableRow>
-            <DrawerMain open={drawerOpen} onClose={() => setDrawerOpen(false)} mode={mode} contact={row} />
+            <DrawerMain open={drawerOpen} onClose={() => setDrawerOpen(false)} mode={mode} setMode={setMode}contact={row} />
         </>
 
     );
 }
 
 export default TableItem;
+

@@ -7,9 +7,6 @@ import ModeEditOutlinedIcon from '@mui/icons-material/ModeEditOutlined';
 import { IconButton } from '@mui/material';
 
 const ContactDetails = ({ contact, onEdit }) => {
-
-
-
   if (!contact) return <div>No contact selected</div>;
 
   return (
@@ -19,15 +16,16 @@ const ContactDetails = ({ contact, onEdit }) => {
           <Face6OutlinedIcon className="face-icon" />
         </div>
       </div>
-      <div className="edit"> <IconButton onClick={onEdit} > <ModeEditOutlinedIcon/> </IconButton> Edit </div>
+      <div className="edit"> <IconButton onClick={onEdit} > <ModeEditOutlinedIcon /> </IconButton> Edit </div>
+
       <div className="header">
         <h3>Contact Details</h3>
-       {contact.isMain==1 && <div className="main-contact"> <StarIcon className="icon"/> Main contact</div>} 
+        {contact.isMain == 1 && <div className="main-contact"> <StarIcon className="icon" /> Main contact</div>}
 
       </div>
       <div className="contact-info">
         <div className="contact-row">
-          <div className="contact-field"><span>Name</span> {contact.firstName +" "+ contact.lastName}</div>
+          <div className="contact-field"><span>Name</span> {contact.firstName + " " + contact.lastName}</div>
           <div className="contact-field"><span>Role</span> {contact.role}</div>
           <div className="contact-field"><span>Contact Type</span> {contact.contactType}</div>
         </div>
@@ -37,9 +35,9 @@ const ContactDetails = ({ contact, onEdit }) => {
         <div className="contact-field"><span>Address</span> {contact.address}</div>
         <div className="contact-field"><span>Invoice Name</span> {contact.address}</div>
         <div className="contact-field"><span>Accounting Ref</span> {contact.accountingRef}</div>
-        
+
       </div>
-    
+
     </div>
   );
 };
