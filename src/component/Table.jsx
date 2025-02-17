@@ -23,7 +23,7 @@ export default function CTable({open,onClose,setOpen}) {
                         <TableCell>Name</TableCell>
                         <TableCell >Role</TableCell>
                         <TableCell >ContactDetails</TableCell>
-                        <TableCell >MainContact</TableCell>
+                        <TableCell ></TableCell>
                         <TableCell >...</TableCell>
                         
                     </TableRow>

@@ -58,7 +58,7 @@ const FilterModal = ({ open, onClose, onSave }) => {
         </Select>
 
         <Typography variant="body1">Main Contact</Typography>
-        <Switch checked={filters.mainContact} onChange={(e) => setFilters({ ...filters, isMaim: e.target.checked })} />
+        <Switch checked={filters.isMaim} onChange={(e) => setFilters({ ...filters, isMaim: e.target.checked })} />
 
         <Box sx={{ display: "flex", justifyContent: "space-between", mt: 3 }}>
           <Button variant="text" onClick={onClose}>Cancel</Button>

@@ -7,7 +7,8 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useDispatch } from "react-redux";
-import { addContactToArr } from "../app/contactSlice";
+import { addContactToArr, updateContact  } from "../app/contactSlice";
+
 
 const phoneTypes = ["Mobile", "Work", "Home"];
 const emailTypes = ["Private", "Work", "Other"];
@@ -46,11 +47,20 @@ const AddContact = ({ onClose, contact, isEdit }) => {
     const { fields: phoneFields, append: addPhone, remove: removePhone } = useFieldArray({ control, name: "phones" });
     const { fields: emailFields, append: addEmail, remove: removeEmail } = useFieldArray({ control, name: "emails" });
 
+    // const onSubmit = (data) => {
+    //     dispatch(addContactToArr(data));
+    //     onClose();
+    // };
     const onSubmit = (data) => {
-        dispatch(addContactToArr(data));
+        if (isEdit) {
+            // עדכון איש קשר קיים
+            dispatch(updateContact({ id: contact.id, ...data }));
+        } else {
+            // הוספת איש קשר חדש
+            dispatch(addContactToArr({ id: Date.now(), ...data }));
+        }
         onClose();
     };
-
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <Typography variant="h6" mb={2}>New Contact</Typography>

@@ -4,53 +4,51 @@ import { TextField, InputAdornment, IconButton, Box, Typography } from "@mui/mat
 import SearchIcon from "@mui/icons-material/Search";
 import FilterAltOutlinedIcon from "@mui/icons-material/FilterAltOutlined";
 import { insert } from "../app/contactSlice";
-import contactData from "../contact.json"; 
+import contactData from "../contact.json";
 import FilterModal from "./FilterModal";
 
 const Filter = () => {
   const [search, setSearch] = useState("");
   const [open, setOpen] = useState(false);
   const dispatch = useDispatch();
-  
+
 
   const displayedContacts = useSelector((state) => state.contact.arr);
 
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearch(value);
-
     if (value === "") {
       dispatch(insert(contactData));
     } else {
       const filteredData = displayedContacts.filter(contact =>
         (`${contact.firstName} ${contact.lastName}`).toLowerCase().includes(value.toLowerCase())
       );
-
       dispatch(insert(filteredData));
     }
   };
 
   const handleSaveFilters = (filters) => {
-  let filteredData = contactData;
+    let filteredData = contactData;
 
-  if (filters.contactType !== "All") {
-    filteredData = filteredData.filter(contact => contact.contactType === filters.contactType);
-  }
+    if (filters.contactType !== "All") {
+      filteredData = filteredData.filter(contact => contact.contactType === filters.contactType);
+    }
 
-  if (filters.tags !== "All") {
-    filteredData = filteredData.filter(contact => contact.tags===filters.tags);
-  }
+    if (filters.tags !== "All") {
+      filteredData = filteredData.filter(contact => contact.tags === filters.tags);
+    }
 
-  if (filters.activeContact !== "All") {
-    const isActive = filters.activeContact === "Yes"; 
-    filteredData = filteredData.filter(contact => contact.activeContact === isActive);
-  }
-  if (filters.mainContact) {
-    filteredData = filteredData.filter(contact => contact.isMain === filters.isMain);
-  }
-  dispatch(insert(filteredData));
-  setOpen(false);
-};
+    if (filters.activeContact !== "All") {
+      const isActive = filters.activeContact === "Yes";
+      filteredData = filteredData.filter(contact => contact.activeContact === isActive);
+    }
+    if (filters.mainContact) {
+      filteredData = filteredData.filter(contact => contact.isMain === filters.isMain);
+    }
+    dispatch(insert(filteredData));
+    setOpen(false);
+  };
   return (
     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 1 }}>
       <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>

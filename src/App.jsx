@@ -20,7 +20,7 @@ function App() {
       .then((res) => res.json())
       .then(data => {
         dispatch(insert(data))
-        console.log(data);
+    
       })
       .catch(err => console.log(err));
   }, [])
